@@ -157,7 +157,7 @@ private:
     long         m_totalCombinations;     // number of combinations PICT dealt with in this run
     long         m_remainingCombinations; // number of uncovered combinations (Preview and Approximate)
 
-    std::wifstream openFile( const std::wstring& filePath );
+    void openFile( const std::wstring& filePath, std::wifstream& file );
     bool readModel                 ( const std::wstring& filePath );
     bool readParameter             ( std::wstring& line );
     bool readParamSet              ( std::wstring& line );
